@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt & Buchung | desha.at</title>
+  <meta name="description" content="Melde dich — ich antworte persönlich. ECHO® Session buchen, Fragen stellen oder einfach in Kontakt treten. Wien/Langenzersdorf und online.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">desha</a>
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav__links" role="list">
+          <li><a href="/ueber-mich.html" class="nav__link">Über mich</a></li>
+          <li><a href="/echo-methode.html" class="nav__link">ECHO® Methode</a></li>
+          <li><a href="/angebote/" class="nav__link">Angebote</a></li>
+          <li><a href="/blog/" class="nav__link">Impulse</a></li>
+        </ul>
+      </nav>
+      <a href="/kontakt.html" class="btn btn--primary nav__cta is-active">Jetzt anfragen</a>
+      <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="nav__mobile" aria-label="Mobile Navigation">
+      <ul class="nav__mobile-links" role="list">
+        <li><a href="/ueber-mich.html" class="nav__mobile-link">Über mich</a></li>
+        <li><a href="/echo-methode.html" class="nav__mobile-link">ECHO® Methode</a></li>
+        <li><a href="/angebote/" class="nav__mobile-link">Angebote</a></li>
+        <li><a href="/blog/" class="nav__mobile-link">Impulse</a></li>
+        <li><a href="/kontakt.html" class="nav__mobile-link">Kontakt</a></li>
+      </ul>
+      <a href="/kontakt.html" class="btn btn--primary" style="align-self:flex-start;margin-top:auto;">Jetzt anfragen</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section style="padding-top: 9rem; padding-bottom: var(--space-2xl);" aria-labelledby="page-title">
+      <div class="u-container u-container--narrow u-text-center">
+        <span class="kicker fade-in">Kontakt</span>
+        <h1 id="page-title" class="fade-in fade-in--delay-1">Lass uns in Verbindung treten.</h1>
+        <p class="lead fade-in fade-in--delay-2" style="margin-inline: auto; margin-top: var(--space-lg);">
+          Wenn du spürst, dass meine Arbeit für dich passt — oder wenn du noch unsicher bist
+          und einfach mehr wissen möchtest — dann melde dich.
+          <br><br>
+          Ich antworte persönlich. Meistens innerhalb von 2 Werktagen.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- KONTAKT FORMULAR + INFO -->
+    <section class="u-section u-bg-surface" aria-labelledby="formular-title">
+      <div class="u-container">
+        <div class="split split--wide-reversed" style="align-items: start;">
+
+          <!-- Info-Block -->
+          <div class="fade-in" style="display: flex; flex-direction: column; gap: var(--space-xl);">
+
+            <div>
+              <h2 id="formular-title" style="font-size: var(--text-2xl);">Schreib mir.</h2>
+              <p style="margin-top: var(--space-md); color: var(--color-text-muted);">
+                Kein langer Fragebogen, kein komplizierter Prozess. Einfach kurz beschreiben,
+                was dich bewegt — ich melde mich bei dir.
+              </p>
+            </div>
+
+            <div>
+              <p class="footer__col-title" style="color: var(--color-text);">Direkt erreichbar</p>
+              <p style="margin-top: var(--space-sm); font-size: var(--text-sm); color: var(--color-text-muted);">
+                <a href="mailto:[E-Mail-Adresse]" style="color: var(--color-primary);">[E-Mail-Adresse]</a>
+              </p>
+            </div>
+
+            <div>
+              <p class="footer__col-title" style="color: var(--color-text);">Standort</p>
+              <p style="margin-top: var(--space-sm); font-size: var(--text-sm); color: var(--color-text-muted);">
+                Wien / Langenzersdorf, Niederösterreich<br>
+                und online — weltweit
+              </p>
+            </div>
+
+            <div style="
+              padding: var(--space-lg);
+              background: var(--color-bg);
+              border-radius: var(--radius-lg);
+              border: 1px solid var(--color-border);
+            ">
+              <p style="
+                font-family: var(--font-serif);
+                font-size: var(--text-lg);
+                font-style: italic;
+                font-weight: 300;
+                line-height: 1.5;
+                color: var(--color-text);
+              ">
+                Ein kurzes Kennenlernen, ohne Verpflichtung.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Formular -->
+          <div class="fade-in fade-in--delay-1">
+            <div style="
+              background: var(--color-bg);
+              border-radius: var(--radius-lg);
+              padding: var(--space-xl);
+              border: 1px solid var(--color-border);
+            ">
+              <!-- Formspree: DEIN-FORMSPREE-ID ersetzen -->
+              <form
+                class="form js-contact-form"
+                action="https://formspree.io/f/DEIN-FORMSPREE-ID"
+                method="POST"
+                aria-label="Kontaktformular"
+              >
+                <div class="form form--two-col">
+
+                  <div class="form__group">
+                    <label for="vorname" class="form__label">Vorname *</label>
+                    <input type="text" id="vorname" name="vorname" class="form__input"
+                           placeholder="Dein Vorname" required autocomplete="given-name">
+                  </div>
+
+                  <div class="form__group">
+                    <label for="email" class="form__label">E-Mail *</label>
+                    <input type="email" id="email" name="email" class="form__input"
+                           placeholder="deine@email.at" required autocomplete="email">
+                  </div>
+
+                  <div class="form__group form__group--full">
+                    <label for="anliegen" class="form__label">Anliegen</label>
+                    <select id="anliegen" name="anliegen" class="form__select">
+                      <option value="">Bitte wählen…</option>
+                      <option value="echo-session">ECHO® Session</option>
+                      <option value="gruppenarbeit">Gruppenarbeit / Workshop</option>
+                      <option value="yoga">Yoga &amp; Faszien</option>
+                      <option value="klangreise">Klangreise</option>
+                      <option value="sonstiges">Sonstiges / Frage</option>
+                    </select>
+                  </div>
+
+                  <div class="form__group form__group--full">
+                    <label for="nachricht" class="form__label">Nachricht *</label>
+                    <textarea id="nachricht" name="nachricht" class="form__textarea"
+                              placeholder="Was beschäftigt dich? Was möchtest du wissen?" required></textarea>
+                  </div>
+
+                  <div class="form__group form__group--full">
+                    <label class="form__checkbox-group">
+                      <input type="checkbox" name="datenschutz" class="form__checkbox" required>
+                      <span class="form__checkbox-label">
+                        Ich habe die <a href="/impressum.html#datenschutz">Datenschutzerklärung</a>
+                        gelesen und bin einverstanden. *
+                      </span>
+                    </label>
+                  </div>
+
+                </div>
+
+                <!-- Honeypot gegen Spam -->
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                <!-- Redirect nach Absenden -->
+                <input type="hidden" name="_next" value="https://desha.at/kontakt.html?success=true">
+
+                <button type="submit" class="btn btn--primary" style="margin-top: var(--space-md); width: 100%;">
+                  Nachricht senden
+                </button>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ KURZVERSION -->
+    <section class="u-section" aria-labelledby="faq-title">
+      <div class="u-container u-container--narrow">
+        <div class="u-text-center fade-in">
+          <span class="kicker">FAQ</span>
+          <h2 id="faq-title">Häufige Fragen</h2>
+        </div>
+
+        <div style="margin-top: var(--space-xl); display: grid; gap: var(--space-lg);" class="fade-in fade-in--delay-1">
+
+          <details style="border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-lg);">
+            <summary style="
+              font-family: var(--font-serif);
+              font-size: var(--text-xl);
+              font-weight: 300;
+              cursor: pointer;
+              list-style: none;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: var(--space-md);
+              padding-bottom: var(--space-sm);
+            ">
+              Für wen ist die ECHO® Methode geeignet?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <p style="margin-top: var(--space-md); color: var(--color-text-muted); padding-right: 2rem;">
+              Für Frauen (und Menschen), die das Gefühl haben, dass da noch etwas ist — obwohl sie schon viel an sich gearbeitet haben. Kein Vorwissen nötig, keine spirituellen Vorkenntnisse erforderlich.
+            </p>
+          </details>
+
+          <details style="border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-lg);">
+            <summary style="
+              font-family: var(--font-serif);
+              font-size: var(--text-xl);
+              font-weight: 300;
+              cursor: pointer;
+              list-style: none;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: var(--space-md);
+              padding-bottom: var(--space-sm);
+            ">
+              Wie läuft eine ECHO® Session ab?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <p style="margin-top: var(--space-md); color: var(--color-text-muted); padding-right: 2rem;">
+              Wir beginnen mit deinem Thema. Über einen strukturierten Prozess erkennen wir gemeinsam, wo der Ursprung liegt — und lösen ihn dort. Eine Session dauert ca. 90 Minuten, online oder persönlich in Wien/Langenzersdorf.
+            </p>
+          </details>
+
+          <details style="border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-lg);">
+            <summary style="
+              font-family: var(--font-serif);
+              font-size: var(--text-xl);
+              font-weight: 300;
+              cursor: pointer;
+              list-style: none;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: var(--space-md);
+              padding-bottom: var(--space-sm);
+            ">
+              Ist ECHO® Therapie?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <p style="margin-top: var(--space-md); color: var(--color-text-muted); padding-right: 2rem;">
+              Nein. ECHO® ist keine Psychotherapie und ersetzt diese nicht. Es ist eine systemisch-somatische Transformationsmethode. Bei akuten psychischen Erkrankungen bitte zuerst therapeutische Begleitung suchen.
+            </p>
+          </details>
+
+          <details style="border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-lg);">
+            <summary style="
+              font-family: var(--font-serif);
+              font-size: var(--text-xl);
+              font-weight: 300;
+              cursor: pointer;
+              list-style: none;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: var(--space-md);
+              padding-bottom: var(--space-sm);
+            ">
+              Bietest du Online-Sessions an?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <p style="margin-top: var(--space-md); color: var(--color-text-muted); padding-right: 2rem;">
+              Ja. ECHO® Sessions und erste Gespräche finden regelmäßig online statt. Yoga und Klangreisen hauptsächlich vor Ort in Wien/Langenzersdorf.
+            </p>
+          </details>
+
+          <details style="padding-bottom: var(--space-lg);">
+            <summary style="
+              font-family: var(--font-serif);
+              font-size: var(--text-xl);
+              font-weight: 300;
+              cursor: pointer;
+              list-style: none;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: var(--space-md);
+              padding-bottom: var(--space-sm);
+            ">
+              Wie buche ich?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <p style="margin-top: var(--space-md); color: var(--color-text-muted); padding-right: 2rem;">
+              Über das Buchungswidget auf der jeweiligen Angebotsseite oder per Kontaktformular auf dieser Seite.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="/" class="footer__logo">desha</a>
+          <p class="footer__tagline">ECHO® Methode · Yoga & Faszien · Klangreisen<br>Wien / Langenzersdorf &amp; online</p>
+        </div>
+        <div>
+          <p class="footer__col-title">Angebote</p>
+          <ul class="footer__links" role="list">
+            <li><a href="/angebote/echo-session.html" class="footer__link">ECHO® Session</a></li>
+            <li><a href="/angebote/gruppenarbeit.html" class="footer__link">Workshops &amp; Frauenkreise</a></li>
+            <li><a href="/angebote/yoga-faszien.html" class="footer__link">Yoga &amp; Faszien</a></li>
+            <li><a href="/angebote/klangreisen.html" class="footer__link">Klangreisen</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Navigation</p>
+          <ul class="footer__links" role="list">
+            <li><a href="/" class="footer__link">Home</a></li>
+            <li><a href="/ueber-mich.html" class="footer__link">Über mich</a></li>
+            <li><a href="/echo-methode.html" class="footer__link">ECHO® Methode</a></li>
+            <li><a href="/blog/" class="footer__link">Impulse</a></li>
+            <li><a href="/kontakt.html" class="footer__link">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Kontakt</p>
+          <ul class="footer__links" role="list">
+            <li><a href="/kontakt.html" class="footer__link">Anfrage stellen</a></li>
+            <li><a href="mailto:[E-Mail-Adresse]" class="footer__link">[E-Mail-Adresse]</a></li>
+            <li><span class="footer__link" style="cursor:default;">Wien / Langenzersdorf</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 desha.at · ECHO® ist eine eingetragene Marke von Wedderhall LLC / Kaja Andrea Otto.</span>
+        <nav class="footer__legal" aria-label="Rechtliche Links">
+          <a href="/impressum.html" class="footer__legal-link">Impressum</a>
+          <a href="/impressum.html#datenschutz" class="footer__legal-link">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

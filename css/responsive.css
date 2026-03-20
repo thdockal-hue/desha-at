@@ -1,0 +1,256 @@
+/* ============================================================
+   desha.at — responsive.css
+   Mobile-first Breakpoints
+   Breakpoints: sm 480px · md 768px · lg 1024px · xl 1200px
+   ============================================================ */
+
+
+/* ============================================================
+   BASE = MOBILE (keine Media Query nötig — wird in main/components definiert)
+   Hier nur Overrides für Mobile-spezifische Anpassungen
+   ============================================================ */
+
+/* Navigation: Hamburger auf Mobile */
+.nav__links,
+.nav__cta {
+  display: none;
+}
+
+.nav__toggle {
+  display: flex;
+}
+
+/* Grid: Alle auf 1 Spalte */
+.u-grid--2,
+.u-grid--3,
+.u-grid--4 {
+  grid-template-columns: 1fr;
+}
+
+/* Footer: Einzel-Spalte */
+.footer__top {
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+/* Newsletter Form: Stack */
+.newsletter__form {
+  flex-direction: column;
+}
+
+/* Kontaktformular: 1 Spalte */
+.form--two-col {
+  grid-template-columns: 1fr;
+}
+
+.form--two-col .form__group--full {
+  grid-column: 1;
+}
+
+/* Hero: Etwas weniger Padding */
+.hero {
+  min-height: 100svh;
+  align-items: flex-start;
+  padding-top: 5rem;
+}
+
+.hero__title {
+  max-width: 100%;
+}
+
+/* Section-Header immer links auf Mobile */
+.section-header--center {
+  text-align: left;
+}
+
+.section-header--center p {
+  margin-inline: 0;
+}
+
+/* Offer Cards Grid */
+.offers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+/* Testimonials */
+.testimonials-grid {
+  grid-template-columns: 1fr;
+}
+
+
+/* ============================================================
+   SM — 480px+
+   ============================================================ */
+@media (min-width: 480px) {
+
+  /* Newsletter Form nebeneinander wenn Platz */
+  .newsletter__form {
+    flex-direction: row;
+  }
+
+  /* 2-spaltig wenn genug Platz */
+  .offers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ============================================================
+   MD — 768px+ (Tablet)
+   ============================================================ */
+@media (min-width: 768px) {
+
+  /* Navigation: Desktop */
+  .nav__links {
+    display: flex;
+  }
+
+  .nav__cta {
+    display: inline-flex;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  /* Section-Header: Zentriert wieder aktiv */
+  .section-header--center {
+    text-align: center;
+  }
+
+  .section-header--center p {
+    margin-inline: auto;
+  }
+
+  /* Grid: 2 Spalten */
+  .u-grid--2,
+  .u-grid--3,
+  .u-grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Kontaktformular: 2 Spalten */
+  .form--two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form--two-col .form__group--full {
+    grid-column: 1 / -1;
+  }
+
+  /* Footer: 2 Spalten */
+  .footer__top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Hero: Zentriert ausrichten */
+  .hero {
+    align-items: center;
+    padding-top: 6rem;
+  }
+
+  /* Testimonials: 2 Spalten */
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ============================================================
+   LG — 1024px+ (Desktop)
+   ============================================================ */
+@media (min-width: 1024px) {
+
+  /* Grid: Volle Spalten */
+  .u-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .u-grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Offers: 4-spaltig */
+  .offers-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Testimonials: 3 Spalten */
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Footer: 4 Spalten */
+  .footer__top {
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+  }
+
+  /* Split-Layout: Text + Bild */
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+  }
+
+  .split--reversed .split__image {
+    order: -1;
+  }
+
+  /* Asymmetrisches Split (55/45) */
+  .split--wide {
+    grid-template-columns: 55fr 45fr;
+  }
+
+  .split--wide-reversed {
+    grid-template-columns: 45fr 55fr;
+  }
+
+}
+
+
+/* ============================================================
+   XL — 1200px+
+   ============================================================ */
+@media (min-width: 1200px) {
+
+  /* Noch mehr Luft im Hero */
+  .hero {
+    padding-top: 7rem;
+  }
+
+  /* Blog-Grid: 3 Spalten */
+  .blog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* ============================================================
+   PRINT
+   ============================================================ */
+@media print {
+  .nav,
+  .footer,
+  .btn,
+  .newsletter {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+}
