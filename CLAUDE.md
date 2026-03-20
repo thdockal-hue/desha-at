@@ -178,7 +178,7 @@ Footer-Links: Stimmen · FAQ · Impressum · Datenschutz
 
 | Platzhalter | Bedeutung |
 |---|---|
-| `[Name]` | Vollständiger Name der Betreiberin |
+| `Monika Tatrai` | Vollständiger Name der Betreiberin |
 | `[E-Mail-Adresse]` | Kontakt-E-Mail |
 | `[XX €]` | Preis ECHO® Session |
 | `[Ausbildung, Jahr]` | Yoga-Ausbildung |

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo view:*)",
+      "Bash(npm install:*)",
+      "Bash(uipro init:*)",
+      "Bash(python3:*)",
+      "WebFetch(domain:unsplash.com)",
+      "WebSearch",
+      "Bash(git add:*)"
+    ]
+  }
+}
