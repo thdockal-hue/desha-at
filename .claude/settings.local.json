@@ -7,7 +7,21 @@
       "Bash(python3:*)",
       "WebFetch(domain:unsplash.com)",
       "WebSearch",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git restore:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:singingbowlhealing.com)",
+      "WebFetch(domain:publicwww.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(mv \"portrait-monika.jpg.jpg\" \"portrait-monika.jpg\")",
+      "Bash(mv \"klang-hand.jpg.jpg\" \"klang-hand.jpg\")",
+      "Bash(mv \"klang-hero.jpg.jpg\" \"klang-hero.jpg\")",
+      "Bash(mv \"klang-set.jpg.jpg\" \"klang-set.jpg\")",
+      "Bash(mv \"klang-tisch.jpg.jpg\" \"klang-tisch.jpg\")",
+      "Bash(sed -i 's|assets/images/og-image.jpg|assets/images/portrait-monika.jpg|g' index.html ueber-mich.html echo-methode.html kontakt.html impressum.html)",
+      "Bash(sed -i 's|assets/images/og-image.jpg|assets/images/portrait-monika.jpg|g' angebote/index.html angebote/echo-session.html angebote/gruppenarbeit.html angebote/yoga-faszien.html angebote/klangreisen.html angebote/online-retreat.html blog/index.html)",
+      "Bash(python -c \":*)"
     ]
   }
 }
