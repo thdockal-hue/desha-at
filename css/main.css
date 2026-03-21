@@ -7,20 +7,20 @@
    1. CUSTOM PROPERTIES
    ------------------------------------------------------------ */
 :root {
-  /* Colors */
-  --color-primary:    #C4775A;   /* Terrakotta */
-  --color-secondary:  #8A9E7F;   /* Salbeigrün */
-  --color-accent:     #C4985A;   /* Gold */
-  --color-bg:         #FAF8F4;   /* Cremeweiß — Hauptcanvas */
-  --color-surface:    #F0EDE8;   /* Warm Hellgrau — Karten/Sektionen */
-  --color-text:       #2C2218;   /* Dunkelbraun — kein reines Schwarz */
-  --color-text-muted: #7A6A5A;   /* Gedämpfter Braun — Sekundärtext */
-  --color-border:     rgba(196, 119, 90, 0.15); /* Hauch Terrakotta */
+  /* Colors — DESHA Brand Guide */
+  --color-primary:    #38489B;   /* Brand Blau */
+  --color-secondary:  #65C58C;   /* Brand Grün/Mint */
+  --color-accent:     #38489B;   /* Brand Blau */
+  --color-bg:         #FAFBFC;   /* Fast Weiß mit leichtem Blau-Ton */
+  --color-surface:    #E5ECEF;   /* Brand Hell-Blau-Grau */
+  --color-text:       #494949;   /* Brand Charcoal */
+  --color-text-muted: #7A8A9A;   /* Gedämpft, kühler Ton */
+  --color-border:     rgba(56, 72, 155, 0.12); /* Hauch Brand Blau */
   --color-white:      #FFFFFF;
 
-  /* Typography */
-  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --font-sans:  'DM Sans', system-ui, -apple-system, sans-serif;
+  /* Typography — DESHA Brand Guide */
+  --font-serif: 'Lato', system-ui, -apple-system, sans-serif;
+  --font-sans:  'Montserrat', system-ui, -apple-system, sans-serif;
 
   /* Font Sizes — fluid, clamp-basiert */
   --text-xs:   clamp(0.75rem,  1.2vw, 0.8rem);
@@ -140,13 +140,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
   font-weight: 300;
   line-height: 1.15;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   color: var(--color-text);
 }
 
-h1 { font-size: var(--text-5xl); font-style: italic; }
+h1 { font-size: var(--text-5xl); font-weight: 300; }
 h2 { font-size: var(--text-4xl); }
-h3 { font-size: var(--text-3xl); font-style: italic; }
+h3 { font-size: var(--text-3xl); }
 h4 { font-size: var(--text-2xl); }
 h5 { font-size: var(--text-xl); }
 h6 { font-size: var(--text-lg); }

@@ -37,8 +37,8 @@
 
 .btn--primary:hover,
 .btn--primary:focus-visible {
-  background-color: #b5694d;
-  border-color: #b5694d;
+  background-color: #2D3A7A;
+  border-color: #2D3A7A;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -122,7 +122,7 @@
 
 /* Scrolled state — wird via JS hinzugefügt */
 .nav.is-scrolled {
-  background-color: rgba(250, 248, 244, 0.96);
+  background-color: rgba(250, 251, 252, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: var(--shadow-sm);
@@ -140,18 +140,20 @@
 
 /* Logo */
 .nav__logo {
-  font-family: var(--font-serif);
-  font-size: var(--text-xl);
-  font-style: italic;
-  font-weight: 300;
-  color: var(--color-text);
-  letter-spacing: -0.01em;
-  transition: color var(--transition);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
-.nav__logo:hover {
-  color: var(--color-primary);
+.nav__logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  transition: opacity var(--transition);
+}
+
+.nav__logo:hover .nav__logo-img {
+  opacity: 0.85;
 }
 
 /* Desktop Links */
