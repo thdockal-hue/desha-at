@@ -811,6 +811,30 @@
   gap: var(--space-md);
 }
 
+.footer__social {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--color-border);
+  color: var(--color-text-muted);
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.footer__social-link:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background: rgba(56, 72, 155, 0.06);
+}
+
 .footer__logo {
   font-family: var(--font-serif);
   font-size: var(--text-2xl);
