@@ -160,7 +160,7 @@
 .nav__links {
   display: flex;
   align-items: center;
-  gap: var(--space-lg);
+  gap: var(--space-md);
   list-style: none;
 }
 
