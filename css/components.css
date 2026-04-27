@@ -116,6 +116,9 @@
   right: 0;
   z-index: 100;
   padding-block: 1.25rem;
+  background-color: rgba(250, 251, 252, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: background var(--transition-slow), box-shadow var(--transition-slow),
               padding var(--transition);
 }
